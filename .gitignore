@@ -6,10 +6,3 @@ __pycache__/
 .env
 .venv
 *.egg-info/
-.dvc/
-logs/
-data/raw/
-data/processed/
-data/final/
-models/
-/reports

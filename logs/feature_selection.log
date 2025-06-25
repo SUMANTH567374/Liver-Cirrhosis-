@@ -1,0 +1,138 @@
+2025-06-25 15:50:11,489 [INFO] - Starting feature selection using Random Forest...
+2025-06-25 15:50:11,676 [INFO] - Top 14 features:
+Bilirubin        0.154413
+Copper           0.154275
+Age              0.113485
+Prothrombin      0.109599
+SGOT             0.090586
+Albumin          0.067552
+Platelets        0.067496
+Cholesterol      0.062651
+Alk_Phos         0.057295
+Tryglicerides    0.056944
+Stage            0.039781
+Drug             0.017884
+Ascites          0.008037
+dtype: float64
+2025-06-25 15:50:12,954 [INFO] - Feature importance plot saved to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\top_14_features.png
+2025-06-25 15:50:16,395 [INFO] - Selected features saved to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\final\selected_features.txt
+2025-06-25 15:55:36,134 [INFO] - Starting feature selection using Random Forest...
+2025-06-25 15:55:36,145 [INFO] - Class distribution after SMOTE: {0: np.int64(240), 1: np.int64(240)}
+2025-06-25 15:55:36,161 [INFO] - Balanced data saved to: C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\final\balanced_data.csv
+2025-06-25 15:55:36,304 [INFO] - Top 14 features:
+Bilirubin        0.200374
+Copper           0.137325
+Prothrombin      0.126610
+Age              0.120010
+SGOT             0.078992
+Albumin          0.057327
+Cholesterol      0.055090
+Platelets        0.054667
+Alk_Phos         0.053207
+Tryglicerides    0.050621
+Ascites          0.023789
+Drug             0.023640
+Stage            0.018349
+dtype: float64
+2025-06-25 15:55:36,683 [INFO] - Feature importance plot saved to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\top_14_features.png
+2025-06-25 15:55:41,369 [INFO] - Selected features saved to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\final\selected_features.txt
+2025-06-25 16:34:17,426 [INFO] - Starting feature selection using Random Forest...
+2025-06-25 16:34:17,442 [INFO] - Class distribution after SMOTE: {0: np.int64(240), 1: np.int64(240)}
+2025-06-25 16:34:17,457 [INFO] - Balanced data saved to: C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\final\balanced_data.csv
+2025-06-25 16:34:17,616 [INFO] - Top 14 features:
+Bilirubin        0.200374
+Copper           0.137325
+Prothrombin      0.126610
+Age              0.120010
+SGOT             0.078992
+Albumin          0.057327
+Cholesterol      0.055090
+Platelets        0.054667
+Alk_Phos         0.053207
+Tryglicerides    0.050621
+Ascites          0.023789
+Drug             0.023640
+Stage            0.018349
+dtype: float64
+2025-06-25 16:34:18,031 [INFO] - Feature importance plot saved to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\top_14_features.png
+2025-06-25 16:34:20,762 [INFO] - Selected features saved to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\final\selected_features.txt
+2025-06-25 16:35:18,208 [INFO] - Starting feature selection using Random Forest...
+2025-06-25 16:35:18,225 [INFO] - Class distribution after SMOTE: {0: np.int64(240), 1: np.int64(240)}
+2025-06-25 16:35:18,234 [INFO] - Balanced data saved to: C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\final\balanced_data.csv
+2025-06-25 16:35:18,431 [INFO] - Top 14 features:
+Bilirubin        0.200374
+Copper           0.137325
+Prothrombin      0.126610
+Age              0.120010
+SGOT             0.078992
+Albumin          0.057327
+Cholesterol      0.055090
+Platelets        0.054667
+Alk_Phos         0.053207
+Tryglicerides    0.050621
+Ascites          0.023789
+Drug             0.023640
+Stage            0.018349
+dtype: float64
+2025-06-25 16:35:18,717 [INFO] - Feature importance plot saved to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\top_14_features.png
+2025-06-25 16:35:21,497 [INFO] - Selected features saved to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\final\selected_features.txt
+2025-06-25 16:58:59,981 [INFO] - Starting feature selection using Random Forest...
+2025-06-25 16:59:00,015 [INFO] - Class distribution after SMOTE: {0: np.int64(240), 1: np.int64(240)}
+2025-06-25 16:59:00,098 [INFO] - Balanced data saved to: C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\final\balanced_data.csv
+2025-06-25 16:59:00,457 [INFO] - Top 14 features:
+Bilirubin        0.200374
+Copper           0.137325
+Prothrombin      0.126610
+Age              0.120010
+SGOT             0.078992
+Albumin          0.057327
+Cholesterol      0.055090
+Platelets        0.054667
+Alk_Phos         0.053207
+Tryglicerides    0.050621
+Ascites          0.023789
+Drug             0.023640
+Stage            0.018349
+dtype: float64
+2025-06-25 16:59:01,011 [INFO] - Feature importance plot saved to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\feature_selection\top_14_features.png
+2025-06-25 16:59:04,005 [INFO] - Selected features saved to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\final\selected_features.txt
+2025-06-25 17:21:17,779 [INFO] - Starting feature selection using Random Forest...
+2025-06-25 17:21:17,822 [INFO] - Class distribution after SMOTE: {0: np.int64(240), 1: np.int64(240)}
+2025-06-25 17:21:17,842 [INFO] - Balanced data saved to: C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\final\balanced_data.csv
+2025-06-25 17:21:18,430 [INFO] - Top 14 features:
+Bilirubin        0.200374
+Copper           0.137325
+Prothrombin      0.126610
+Age              0.120010
+SGOT             0.078992
+Albumin          0.057327
+Cholesterol      0.055090
+Platelets        0.054667
+Alk_Phos         0.053207
+Tryglicerides    0.050621
+Ascites          0.023789
+Drug             0.023640
+Stage            0.018349
+dtype: float64
+2025-06-25 17:21:19,372 [INFO] - Feature importance plot saved to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\top_14_features.png
+2025-06-25 17:21:21,700 [INFO] - Selected features saved to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\final\selected_features.txt
+2025-06-25 17:27:34,347 [INFO] - Starting feature selection using Random Forest...
+2025-06-25 17:27:34,395 [INFO] - Class distribution after SMOTE: {0: np.int64(240), 1: np.int64(240)}
+2025-06-25 17:27:34,414 [INFO] - Balanced data saved to: C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\final\balanced_data.csv
+2025-06-25 17:27:34,886 [INFO] - Top 14 features:
+Bilirubin        0.200374
+Copper           0.137325
+Prothrombin      0.126610
+Age              0.120010
+SGOT             0.078992
+Albumin          0.057327
+Cholesterol      0.055090
+Platelets        0.054667
+Alk_Phos         0.053207
+Tryglicerides    0.050621
+Ascites          0.023789
+Drug             0.023640
+Stage            0.018349
+dtype: float64
+2025-06-25 17:27:35,888 [INFO] - Feature importance plot saved to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\feature_selection\top_14_features.png
+2025-06-25 17:27:35,949 [INFO] - Selected features saved to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\final\selected_features.txt
