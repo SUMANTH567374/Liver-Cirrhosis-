@@ -1,0 +1,53 @@
+stages:
+
+  data_ingestion:
+    cmd: python src/data/data_ingestion.py
+    deps:
+      - src/data/data_ingestion.py
+      - data/raw/cirrhosis.csv
+    outs:
+      - data/raw/cirrhosis.csv  # raw file is the input & reference
+
+  preprocessing:
+    cmd: python src/data/data_preprocessing.py
+    deps:
+      - src/data/data_preprocessing.py
+      - data/raw/cirrhosis.csv
+    outs:
+      - data/processed/cleaned_data.csv
+
+  feature_selection:
+    cmd: python src/features/feature_selection.py
+    deps:
+      - src/features/feature_selection.py
+      - data/processed/cleaned_data.csv
+    outs:
+      - data/final/selected_features.txt
+      - graphs/top_14_features.png
+
+  model_training:
+    cmd: python src/models/model_training.py
+    deps:
+      - src/models/model_training.py
+      - data/final/balanced_data.csv
+      - data/final/selected_features.txt
+    outs:
+      - models/LogisticRegression_best.pkl
+      - models/RandomForest_best.pkl
+      - models/SVM_best.pkl
+      - models/KNN_best.pkl
+      - models/GradientBoosting_best.pkl
+
+  evaluation:
+    cmd: python src/models/model_evaluation.py
+    deps:
+      - src/models/model_evaluation.py
+      - models/LogisticRegression_best.pkl
+      - models/RandomForest_best.pkl
+      - models/SVM_best.pkl
+      - models/KNN_best.pkl
+      - models/GradientBoosting_best.pkl
+      - data/final/balanced_data.csv
+    outs:
+      - reports/metrics.txt
+      - reports/classification_report.json
