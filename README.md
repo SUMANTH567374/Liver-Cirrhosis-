@@ -44,8 +44,8 @@ To predict liver cirrhosis status based on patient features, helping in early de
 To reproduce the entire pipeline:
 
 ```bash
-dvc repro
 
+dvc repro
 dvc exp run
 dvc exp show
 
@@ -55,8 +55,7 @@ dvc exp show
 Data and model artifacts are stored and versioned using a DVC remote set at:
 
 bash
-Copy
-Edit
+
 dvc remote add -d local_remote ./dvc_storage
 
 🧠 Future Work
