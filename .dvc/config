@@ -1,0 +1,4 @@
+[core]
+    remote = local_remote
+['remote "local_remote"']
+    url = C:/Users/LENOVO/Downloads/Liver_Cirrhosis/dvc_storage
