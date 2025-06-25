@@ -8,3 +8,4 @@ joblib
 PyYAML
 dvc
 dvc[gdrive]
+fastapi

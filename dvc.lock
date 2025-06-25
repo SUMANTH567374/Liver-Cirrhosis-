@@ -54,8 +54,8 @@ stages:
     outs:
     - path: models/GradientBoosting_best.pkl
       hash: md5
-      md5: 0c577d5fc45bddbc339a98b39cf71ec5
-      size: 217218
+      md5: 6d5db7b1276f9102fa0027a7b8116127
+      size: 824194
     - path: models/KNN_best.pkl
       hash: md5
       md5: 4af932aac201c4e0b59c284efffdd8cb
@@ -66,11 +66,11 @@ stages:
       size: 2141
     - path: models/RandomForest_best.pkl
       hash: md5
-      md5: 8b3fc1c8b53567560bdd06ee486e3010
-      size: 442386
+      md5: 2781f3a7da868bb38277fea316a3c6b8
+      size: 1038530
     - path: models/SVM_best.pkl
       hash: md5
-      md5: 8c441bc0a0e2ecfd8ecd90eb8a5b354c
+      md5: 3f8053aab819dfaf10e62208a40aeeaa
       size: 32813
   evaluation:
     cmd: python src/models/model_evaluation.py

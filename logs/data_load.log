@@ -10,3 +10,38 @@
 2025-06-25 16:34:14,022 [INFO] - Preprocessing started...
 2025-06-25 16:34:14,186 [INFO] - Cleaned data shape: (352, 19)
 2025-06-25 16:34:14,196 [INFO] - Saved cleaned data to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\processed\cleaned_data.csv
+2025-06-25 23:16:28,725 [INFO] - Loading data from C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\raw\cirrhosis.csv
+2025-06-25 23:16:28,733 [INFO] - Data loaded successfully. Shape: (418, 20)
+2025-06-25 23:16:28,733 [INFO] - Preprocessing started...
+2025-06-25 23:16:28,927 [INFO] - Cleaned data shape: (352, 19)
+2025-06-25 23:16:28,935 [INFO] - Saved cleaned data to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\processed\cleaned_data.csv
+2025-06-25 23:17:36,324 [INFO] - Loading data from C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\raw\cirrhosis.csv
+2025-06-25 23:17:36,334 [INFO] - Data loaded successfully. Shape: (418, 20)
+2025-06-25 23:17:36,335 [INFO] - Preprocessing started...
+2025-06-25 23:17:36,596 [INFO] - Cleaned data shape: (352, 19)
+2025-06-25 23:17:36,604 [INFO] - Saved cleaned data to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\processed\cleaned_data.csv
+2025-06-25 23:18:19,502 [INFO] - Loading data from C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\raw\cirrhosis.csv
+2025-06-25 23:18:19,511 [INFO] - Data loaded successfully. Shape: (418, 20)
+2025-06-25 23:18:19,514 [INFO] - Preprocessing started...
+2025-06-25 23:18:19,769 [INFO] - Cleaned data shape: (352, 19)
+2025-06-25 23:18:19,783 [INFO] - Saved cleaned data to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\processed\cleaned_data.csv
+2025-06-25 23:22:40,754 [INFO] - Loading data from C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\raw\cirrhosis.csv
+2025-06-25 23:22:40,763 [INFO] - Data loaded successfully. Shape: (418, 20)
+2025-06-25 23:22:40,763 [INFO] - Preprocessing started...
+2025-06-25 23:22:40,991 [INFO] - Cleaned data shape: (352, 19)
+2025-06-25 23:22:40,999 [INFO] - Saved cleaned data to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\processed\cleaned_data.csv
+2025-06-25 23:49:14,573 [INFO] - Loading data from C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\raw\cirrhosis.csv
+2025-06-25 23:49:14,589 [INFO] - Data loaded successfully. Shape: (418, 20)
+2025-06-25 23:49:14,589 [INFO] - Preprocessing started...
+2025-06-25 23:49:14,785 [INFO] - Cleaned data shape: (352, 19)
+2025-06-25 23:49:14,792 [INFO] - Saved cleaned data to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\processed\cleaned_data.csv
+2025-06-25 23:57:32,846 [INFO] - Loading data from C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\raw\cirrhosis.csv
+2025-06-25 23:57:32,855 [INFO] - Data loaded successfully. Shape: (418, 20)
+2025-06-25 23:57:32,855 [INFO] - Preprocessing started...
+2025-06-25 23:57:33,049 [INFO] - Cleaned data shape: (352, 19)
+2025-06-25 23:57:33,058 [INFO] - Saved cleaned data to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\processed\cleaned_data.csv
+2025-06-26 00:07:36,502 [INFO] - Loading data from C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\raw\cirrhosis.csv
+2025-06-26 00:07:36,551 [INFO] - Data loaded successfully. Shape: (418, 20)
+2025-06-26 00:07:36,566 [INFO] - Preprocessing started...
+2025-06-26 00:07:38,192 [INFO] - Cleaned data shape: (352, 19)
+2025-06-26 00:07:38,220 [INFO] - Saved cleaned data to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\processed\cleaned_data.csv
