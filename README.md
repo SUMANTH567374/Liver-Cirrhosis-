@@ -28,15 +28,10 @@ To predict liver cirrhosis status based on patient features, helping in early de
 Liver_Cirrhosis/
 │
 ├── data/                   # Raw, processed, and final datasets
-│
 ├── models/                 # Trained machine learning models
-│
 ├── reports/                # Metrics, evaluation results, classification reports
-│
 ├── graphs/                 # Plots like ROC curves, confusion matrices, feature importances
-│
 ├── logs/                   # Logging output from pipeline stages
-│
 ├── src/                    # All source code modules
 │   ├── data/               # Data ingestion and preprocessing scripts
 │   ├── features/           # Feature engineering and selection scripts
@@ -45,8 +40,6 @@ Liver_Cirrhosis/
 ├── dvc.yaml                # DVC pipeline stages
 ├── params.yaml             # Central config for model and pipeline parameters
 └── README.md               # Project documentation
-
-
 
 
 ## ✅ Key Features
