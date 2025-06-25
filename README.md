@@ -27,18 +27,25 @@ To predict liver cirrhosis status based on patient features, helping in early de
 
 Liver_Cirrhosis/
 │
-├── data/ # Raw, processed, final datasets
-├── models/ # Trained ML models
-├── reports/ # Metrics, JSON reports, evaluation results
-├── graphs/ # Plots (confusion matrix, ROC curve, etc.)
-├── logs/ # Logging files
-├── src/ # Source code (data, features, models)
-│ ├── data/ # Data ingestion and cleaning
-│ ├── features/ # Feature selection
-│ └── models/ # Training and evaluation
-├── dvc.yaml # DVC pipeline stages
-├── params.yaml # Configurable parameters
-└── README.md # Project documentation
+├── data/                   # Raw, processed, and final datasets
+│
+├── models/                 # Trained machine learning models
+│
+├── reports/                # Metrics, evaluation results, classification reports
+│
+├── graphs/                 # Plots like ROC curves, confusion matrices, feature importances
+│
+├── logs/                   # Logging output from pipeline stages
+│
+├── src/                    # All source code modules
+│   ├── data/               # Data ingestion and preprocessing scripts
+│   ├── features/           # Feature engineering and selection scripts
+│   └── models/             # Model training, evaluation, and utility scripts
+│
+├── dvc.yaml                # DVC pipeline stages
+├── params.yaml             # Central config for model and pipeline parameters
+└── README.md               # Project documentation
+
 
 
 
