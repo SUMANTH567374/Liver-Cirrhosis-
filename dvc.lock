@@ -1,0 +1,101 @@
+schema: '2.0'
+stages:
+  preprocessing:
+    cmd: python src/data/data_preprocessing.py
+    deps:
+    - path: data/raw/cirrhosis.csv
+      hash: md5
+      md5: 230a3916291af39603e89042463349ef
+      size: 31860
+    - path: src/data/data_preprocessing.py
+      hash: md5
+      md5: 858737ee460280e1a0cca91524ec420e
+      size: 2746
+    outs:
+    - path: data/processed/cleaned_data.csv
+      hash: md5
+      md5: 231cac3f8002149f7c3254a9ba02a7a8
+      size: 39977
+  feature_selection:
+    cmd: python src/features/feature_selection.py
+    deps:
+    - path: data/processed/cleaned_data.csv
+      hash: md5
+      md5: 231cac3f8002149f7c3254a9ba02a7a8
+      size: 39977
+    - path: src/features/feature_selection.py
+      hash: md5
+      md5: 5e7a9cd03627452b1890903533e70098
+      size: 3729
+    outs:
+    - path: data/final/selected_features.txt
+      hash: md5
+      md5: e53fe1fee644b9edee42fc7263cd52da
+      size: 123
+    - path: graphs/feature_selection/top_14_features.png
+      hash: md5
+      md5: 58466fad40ec2d2c130d41ae503e78f0
+      size: 25441
+  model_training:
+    cmd: python src/models/model_training.py
+    deps:
+    - path: data/final/balanced_data.csv
+      hash: md5
+      md5: 2ecf1f2a7ae19d97cb964c6b02354688
+      size: 56514
+    - path: data/final/selected_features.txt
+      hash: md5
+      md5: e53fe1fee644b9edee42fc7263cd52da
+      size: 123
+    - path: src/models/model_training.py
+      hash: md5
+      md5: 1f24949d4ed401c21b0dffa8bf7c6d7d
+      size: 4538
+    outs:
+    - path: models/GradientBoosting_best.pkl
+      hash: md5
+      md5: 0c577d5fc45bddbc339a98b39cf71ec5
+      size: 217218
+    - path: models/KNN_best.pkl
+      hash: md5
+      md5: 4af932aac201c4e0b59c284efffdd8cb
+      size: 92192
+    - path: models/LogisticRegression_best.pkl
+      hash: md5
+      md5: 87d33230f3684f8882d0a1bd65745989
+      size: 2141
+    - path: models/RandomForest_best.pkl
+      hash: md5
+      md5: 8b3fc1c8b53567560bdd06ee486e3010
+      size: 442386
+    - path: models/SVM_best.pkl
+      hash: md5
+      md5: 8c441bc0a0e2ecfd8ecd90eb8a5b354c
+      size: 32813
+  evaluation:
+    cmd: python src/models/model_evaluation.py
+    deps:
+    - path: data/final/balanced_data.csv
+      hash: md5
+      md5: 2ecf1f2a7ae19d97cb964c6b02354688
+      size: 56514
+    - path: models/
+      hash: md5
+      md5: 6344d8dcf4f285e7f44f49548c17de7c.dir
+      size: 786750
+      nfiles: 5
+    - path: src/models/model_evaluation.py
+      hash: md5
+      md5: b34a13c37e30cfec17f1ced6c0b85b9e
+      size: 5397
+    outs:
+    - path: graphs/evaluation/
+      hash: md5
+      md5: 213f62e629542a130f6648e96f261207.dir
+      size: 205222
+      nfiles: 10
+    - path: reports/
+      hash: md5
+      md5: 46b747326449ab69e7cfb5ad332d2fbf.dir
+      size: 5335
+      nfiles: 7

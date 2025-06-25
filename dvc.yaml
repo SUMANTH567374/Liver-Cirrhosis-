@@ -1,12 +1,12 @@
 stages:
 
-  data_ingestion:
-    cmd: python src/data/data_ingestion.py
-    deps:
-      - src/data/data_ingestion.py
-      - data/raw/cirrhosis.csv
-    outs:
-      - data/raw/cirrhosis.csv  # raw file is the input & reference
+  # data_ingestion:
+  #   cmd: python src/data/data_ingestion.py
+  #   deps:
+  #     - src/data/data_ingestion.py
+  #     - data/raw/cirrhosis.csv
+  #   outs:
+  #     - data/raw/cirrhosis.csv  # raw file is the input & reference
 
   preprocessing:
     cmd: python src/data/data_preprocessing.py
@@ -23,7 +23,7 @@ stages:
       - data/processed/cleaned_data.csv
     outs:
       - data/final/selected_features.txt
-      - graphs/top_14_features.png
+      - graphs/feature_selection/top_14_features.png
 
   model_training:
     cmd: python src/models/model_training.py
@@ -42,12 +42,8 @@ stages:
     cmd: python src/models/model_evaluation.py
     deps:
       - src/models/model_evaluation.py
-      - models/LogisticRegression_best.pkl
-      - models/RandomForest_best.pkl
-      - models/SVM_best.pkl
-      - models/KNN_best.pkl
-      - models/GradientBoosting_best.pkl
+      - models/
       - data/final/balanced_data.csv
     outs:
-      - reports/metrics.txt
-      - reports/classification_report.json
+      - reports/
+      - graphs/evaluation/
