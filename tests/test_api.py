@@ -1,5 +1,5 @@
 import pytest
-from fastapi.testclient import TestClient
+from fastapi.testclient import TestClient 
 from src.app.main import app, load_model  # Import load_model directly
 import logging
 
