@@ -32,10 +32,10 @@ stages:
       hash: md5
       md5: e53fe1fee644b9edee42fc7263cd52da
       size: 123
-    - path: graphs/feature_selection/top_14_features.png
+    - path: graphs/feature_selection/top_13_features.png
       hash: md5
-      md5: 58466fad40ec2d2c130d41ae503e78f0
-      size: 25441
+      md5: 612ed0444eb219aa4a1985a7926299b8
+      size: 25322
   model_training:
     cmd: python src/models/model_training.py
     deps:
@@ -54,24 +54,24 @@ stages:
     outs:
     - path: models/GradientBoosting_best.pkl
       hash: md5
-      md5: 6d5db7b1276f9102fa0027a7b8116127
-      size: 824194
+      md5: 062a237802b29930e41c337a105ea19f
+      size: 501202
     - path: models/KNN_best.pkl
       hash: md5
-      md5: 4af932aac201c4e0b59c284efffdd8cb
-      size: 92192
+      md5: 5b17d0ee5434ac6b1e4ff80969a080ff
+      size: 90669
     - path: models/LogisticRegression_best.pkl
       hash: md5
-      md5: 87d33230f3684f8882d0a1bd65745989
-      size: 2141
+      md5: 7d9543034c116c8c9bcc1958e695dad2
+      size: 2122
     - path: models/RandomForest_best.pkl
       hash: md5
-      md5: 2781f3a7da868bb38277fea316a3c6b8
-      size: 1038530
+      md5: c04a21803bf33dcd5df9ea98d1c07e41
+      size: 646287
     - path: models/SVM_best.pkl
       hash: md5
-      md5: 3f8053aab819dfaf10e62208a40aeeaa
-      size: 32813
+      md5: 196126b3edef5c548f4e0d570c17948d
+      size: 32794
   evaluation:
     cmd: python src/models/model_evaluation.py
     deps:
@@ -81,21 +81,44 @@ stages:
       size: 56514
     - path: models/
       hash: md5
-      md5: 6344d8dcf4f285e7f44f49548c17de7c.dir
-      size: 786750
-      nfiles: 5
+      md5: a15526a25518944fe5ddbefedeaa369b.dir
+      size: 1273186
+      nfiles: 6
     - path: src/models/model_evaluation.py
       hash: md5
-      md5: b34a13c37e30cfec17f1ced6c0b85b9e
-      size: 5397
+      md5: 9f6383537d2e65282f41083c871d578c
+      size: 11008
     outs:
     - path: graphs/evaluation/
       hash: md5
-      md5: 213f62e629542a130f6648e96f261207.dir
-      size: 205222
+      md5: b1fde2e638d04ef8994c73da4dd210c4.dir
+      size: 203579
       nfiles: 10
     - path: reports/
       hash: md5
-      md5: 46b747326449ab69e7cfb5ad332d2fbf.dir
-      size: 5335
+      md5: e6e83e67afa41bb83de503c36109e7d4.dir
+      size: 5258
       nfiles: 7
+  test:
+    cmd: run_tests.bat
+    deps:
+    - path: models/
+      hash: md5
+      md5: a15526a25518944fe5ddbefedeaa369b.dir
+      size: 1273186
+      nfiles: 6
+    - path: reports/metrics.yaml
+      hash: md5
+      md5: 0db9590d906563577bed48fa5257d0b2
+      size: 291
+    - path: tests/
+      hash: md5
+      md5: 182a08e6e1b8131790ac0f8db7e71ec4.dir
+      size: 64586
+      nfiles: 23
+    outs:
+    - path: test_reports/
+      hash: md5
+      md5: 8306711a10fd5acd6e01d7ac19d55dd6.dir
+      size: 1140
+      nfiles: 1

@@ -23,7 +23,7 @@ stages:
       - data/processed/cleaned_data.csv
     outs:
       - data/final/selected_features.txt
-      - graphs/feature_selection/top_14_features.png
+      - graphs/feature_selection/top_13_features.png
 
   model_training:
     cmd: python src/models/model_training.py
@@ -47,3 +47,13 @@ stages:
     outs:
       - reports/
       - graphs/evaluation/
+  test:
+    cmd: run_tests.bat
+    deps:
+      - tests/
+      - models/
+      - reports/metrics.yaml
+    outs:
+      - test_reports/
+
+

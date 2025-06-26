@@ -45,3 +45,23 @@
 2025-06-26 00:07:36,566 [INFO] - Preprocessing started...
 2025-06-26 00:07:38,192 [INFO] - Cleaned data shape: (352, 19)
 2025-06-26 00:07:38,220 [INFO] - Saved cleaned data to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\processed\cleaned_data.csv
+2025-06-26 07:30:19,225 [INFO] - Loading data from C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\raw\cirrhosis.csv
+2025-06-26 07:30:19,250 [INFO] - Data loaded successfully. Shape: (418, 20)
+2025-06-26 07:30:19,250 [INFO] - Preprocessing started...
+2025-06-26 07:30:19,981 [INFO] - Cleaned data shape: (352, 19)
+2025-06-26 07:30:19,996 [INFO] - Saved cleaned data to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\processed\cleaned_data.csv
+2025-06-26 07:39:13,642 [INFO] - Loading data from C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\raw\cirrhosis.csv
+2025-06-26 07:39:13,650 [INFO] - Data loaded successfully. Shape: (418, 20)
+2025-06-26 07:39:13,650 [INFO] - Preprocessing started...
+2025-06-26 07:39:13,838 [INFO] - Cleaned data shape: (352, 19)
+2025-06-26 07:39:13,853 [INFO] - Saved cleaned data to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\processed\cleaned_data.csv
+2025-06-26 10:36:43,630 [INFO] - Loading data from C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\raw\cirrhosis.csv
+2025-06-26 10:36:43,643 [INFO] - Data loaded successfully. Shape: (418, 20)
+2025-06-26 10:36:43,643 [INFO] - Preprocessing started...
+2025-06-26 10:36:43,884 [INFO] - Cleaned data shape: (352, 19)
+2025-06-26 10:36:43,897 [INFO] - Saved cleaned data to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\processed\cleaned_data.csv
+2025-06-26 10:55:53,429 [INFO] - Loading data from C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\raw\cirrhosis.csv
+2025-06-26 10:55:53,445 [INFO] - Data loaded successfully. Shape: (418, 20)
+2025-06-26 10:55:53,445 [INFO] - Preprocessing started...
+2025-06-26 10:55:53,627 [INFO] - Cleaned data shape: (352, 19)
+2025-06-26 10:55:53,637 [INFO] - Saved cleaned data to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\processed\cleaned_data.csv

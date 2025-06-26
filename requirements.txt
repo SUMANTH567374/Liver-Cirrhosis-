@@ -1,7 +1,5 @@
 pandas
-numpy
-scikit-learn
-imbalanced-learn
+numpy>=1.21
 matplotlib
 seaborn
 joblib
@@ -9,3 +7,10 @@ PyYAML
 dvc
 dvc[gdrive]
 fastapi
+scikit-learn==1.2.2
+imbalanced-learn==0.10.1
+pytest
+httpx>=0.27.0
+
+
+

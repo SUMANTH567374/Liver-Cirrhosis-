@@ -125,3 +125,71 @@
 2025-06-26 00:03:45,070 - INFO - Saved ROC curve for SVM to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\evaluation\SVM_roc_curve.png
 2025-06-26 00:03:45,076 - INFO - Saved structured metrics to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\reports\metrics.yaml
 2025-06-26 00:03:45,080 - INFO -  Model evaluation completed successfully.
+2025-06-26 07:41:55,346 - INFO - Evaluating model: GradientBoosting
+2025-06-26 07:41:56,480 - INFO - Saved evaluation report for GradientBoosting to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\reports\GradientBoosting_report.json
+2025-06-26 07:41:58,110 - INFO - Saved confusion matrix for GradientBoosting to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\evaluation\GradientBoosting_confusion_matrix.png
+2025-06-26 07:41:58,600 - INFO - Saved ROC curve for GradientBoosting to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\evaluation\GradientBoosting_roc_curve.png
+2025-06-26 07:41:58,604 - INFO - Evaluating model: KNN
+2025-06-26 07:41:58,679 - INFO - Saved evaluation report for KNN to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\reports\KNN_report.json
+2025-06-26 07:41:59,360 - INFO - Saved confusion matrix for KNN to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\evaluation\KNN_confusion_matrix.png
+2025-06-26 07:41:59,902 - INFO - Saved ROC curve for KNN to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\evaluation\KNN_roc_curve.png
+2025-06-26 07:41:59,914 - INFO - Evaluating model: LogisticRegression
+2025-06-26 07:41:59,942 - INFO - Saved evaluation report for LogisticRegression to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\reports\LogisticRegression_report.json
+2025-06-26 07:42:00,439 - INFO - Saved confusion matrix for LogisticRegression to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\evaluation\LogisticRegression_confusion_matrix.png
+2025-06-26 07:42:00,904 - INFO - Saved ROC curve for LogisticRegression to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\evaluation\LogisticRegression_roc_curve.png
+2025-06-26 07:42:00,920 - INFO - Evaluating model: RandomForest
+2025-06-26 07:42:01,107 - INFO - Saved evaluation report for RandomForest to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\reports\RandomForest_report.json
+2025-06-26 07:42:01,670 - INFO - Saved confusion matrix for RandomForest to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\evaluation\RandomForest_confusion_matrix.png
+2025-06-26 07:42:02,141 - INFO - Saved ROC curve for RandomForest to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\evaluation\RandomForest_roc_curve.png
+2025-06-26 07:42:02,144 - INFO - Evaluating model: SVM
+2025-06-26 07:42:02,198 - INFO - Saved evaluation report for SVM to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\reports\SVM_report.json
+2025-06-26 07:42:02,685 - INFO - Saved confusion matrix for SVM to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\evaluation\SVM_confusion_matrix.png
+2025-06-26 07:42:03,353 - INFO - Saved ROC curve for SVM to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\evaluation\SVM_roc_curve.png
+2025-06-26 07:42:03,356 - INFO - Saved structured metrics to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\reports\metrics.yaml
+2025-06-26 07:42:03,364 - INFO -  Model evaluation completed successfully.
+2025-06-26 10:34:47,751 - INFO - Evaluating model: GradientBoosting
+2025-06-26 10:34:48,339 - ERROR - ❌ Model evaluation failed: No module named '_loss'
+2025-06-26 10:43:58,444 - INFO - Evaluating model: GradientBoosting
+2025-06-26 10:43:59,313 - INFO - Saved evaluation report for GradientBoosting to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\reports\GradientBoosting_report.json
+2025-06-26 10:44:00,186 - INFO - Saved confusion matrix for GradientBoosting to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\evaluation\GradientBoosting_confusion_matrix.png
+2025-06-26 10:44:00,876 - INFO - Saved ROC curve for GradientBoosting to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\evaluation\GradientBoosting_roc_curve.png
+2025-06-26 10:44:00,877 - INFO - Evaluating model: KNN
+2025-06-26 10:44:01,217 - INFO - Saved evaluation report for KNN to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\reports\KNN_report.json
+2025-06-26 10:44:01,650 - INFO - Saved confusion matrix for KNN to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\evaluation\KNN_confusion_matrix.png
+2025-06-26 10:44:02,054 - INFO - Saved ROC curve for KNN to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\evaluation\KNN_roc_curve.png
+2025-06-26 10:44:02,054 - INFO - Evaluating model: LogisticRegression
+2025-06-26 10:44:02,070 - INFO - Saved evaluation report for LogisticRegression to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\reports\LogisticRegression_report.json
+2025-06-26 10:44:02,519 - INFO - Saved confusion matrix for LogisticRegression to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\evaluation\LogisticRegression_confusion_matrix.png
+2025-06-26 10:44:02,921 - INFO - Saved ROC curve for LogisticRegression to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\evaluation\LogisticRegression_roc_curve.png
+2025-06-26 10:44:02,922 - INFO - Evaluating model: RandomForest
+2025-06-26 10:44:03,008 - INFO - Saved evaluation report for RandomForest to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\reports\RandomForest_report.json
+2025-06-26 10:44:03,643 - INFO - Saved confusion matrix for RandomForest to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\evaluation\RandomForest_confusion_matrix.png
+2025-06-26 10:44:04,066 - INFO - Saved ROC curve for RandomForest to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\evaluation\RandomForest_roc_curve.png
+2025-06-26 10:44:04,066 - INFO - Evaluating model: SVM
+2025-06-26 10:44:04,125 - INFO - Saved evaluation report for SVM to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\reports\SVM_report.json
+2025-06-26 10:44:04,562 - INFO - Saved confusion matrix for SVM to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\evaluation\SVM_confusion_matrix.png
+2025-06-26 10:44:04,979 - INFO - Saved ROC curve for SVM to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\evaluation\SVM_roc_curve.png
+2025-06-26 10:44:04,981 - INFO - Saved structured metrics to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\reports\metrics.yaml
+2025-06-26 10:44:04,981 - INFO - ✅ Model evaluation completed successfully.
+2025-06-26 10:57:28,592 - INFO - Evaluating model: GradientBoosting
+2025-06-26 10:57:28,863 - INFO - Saved evaluation report for GradientBoosting to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\reports\GradientBoosting_report.json
+2025-06-26 10:57:29,686 - INFO - Saved confusion matrix for GradientBoosting to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\evaluation\GradientBoosting_confusion_matrix.png
+2025-06-26 10:57:30,088 - INFO - Saved ROC curve for GradientBoosting to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\evaluation\GradientBoosting_roc_curve.png
+2025-06-26 10:57:30,088 - INFO - Evaluating model: KNN
+2025-06-26 10:57:30,135 - INFO - Saved evaluation report for KNN to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\reports\KNN_report.json
+2025-06-26 10:57:30,495 - INFO - Saved confusion matrix for KNN to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\evaluation\KNN_confusion_matrix.png
+2025-06-26 10:57:30,854 - INFO - Saved ROC curve for KNN to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\evaluation\KNN_roc_curve.png
+2025-06-26 10:57:30,855 - INFO - Evaluating model: LogisticRegression
+2025-06-26 10:57:30,870 - INFO - Saved evaluation report for LogisticRegression to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\reports\LogisticRegression_report.json
+2025-06-26 10:57:31,238 - INFO - Saved confusion matrix for LogisticRegression to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\evaluation\LogisticRegression_confusion_matrix.png
+2025-06-26 10:57:31,758 - INFO - Saved ROC curve for LogisticRegression to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\evaluation\LogisticRegression_roc_curve.png
+2025-06-26 10:57:31,827 - INFO - Evaluating model: RandomForest
+2025-06-26 10:57:31,954 - INFO - Saved evaluation report for RandomForest to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\reports\RandomForest_report.json
+2025-06-26 10:57:32,446 - INFO - Saved confusion matrix for RandomForest to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\evaluation\RandomForest_confusion_matrix.png
+2025-06-26 10:57:32,930 - INFO - Saved ROC curve for RandomForest to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\evaluation\RandomForest_roc_curve.png
+2025-06-26 10:57:32,936 - INFO - Evaluating model: SVM
+2025-06-26 10:57:32,992 - INFO - Saved evaluation report for SVM to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\reports\SVM_report.json
+2025-06-26 10:57:33,394 - INFO - Saved confusion matrix for SVM to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\evaluation\SVM_confusion_matrix.png
+2025-06-26 10:57:33,806 - INFO - Saved ROC curve for SVM to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\evaluation\SVM_roc_curve.png
+2025-06-26 10:57:33,809 - INFO - Saved structured metrics to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\reports\metrics.yaml
+2025-06-26 10:57:33,809 - INFO - ✅ Model evaluation completed successfully.
