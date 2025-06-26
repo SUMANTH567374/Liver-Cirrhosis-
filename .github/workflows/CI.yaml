@@ -61,15 +61,11 @@ jobs:
           docker push docker.io/${{ secrets.DOCKER_USERNAME }}/liver-cirrhosis-app:latest
 
   deploy:
-    name: Deploy to Railway
-    needs: docker
     runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/railwayapp/cli:latest
+    container: ghcr.io/railwayapp/cli:latest
     env:
+      SVC_ID: my-service-id
       RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
-      # Optionally specify the service name and environment:
-      # RAILWAY_SERVICE_ID: your-service-id
     steps:
       - uses: actions/checkout@v3
-      - run: railway up --detached
+      - run: railway up --service=${{ env.SVC_ID }}
