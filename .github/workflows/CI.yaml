@@ -69,11 +69,12 @@ jobs:
       - name: 📥 Checkout Code
         uses: actions/checkout@v3
 
-      - name: 🧰 Install Railway CLI
-        run: npm install -g railway
-
-      - name: 🔐 Login to Railway
-        run: railway login --token ${{ secrets.RAILWAY_TOKEN }}
+      - name: 🧰 Install Railway CLI (new)
+        run: |
+          corepack enable
+          corepack prepare pnpm@latest --activate
+          pnpm dlx @railway/cli login --token ${{ secrets.RAILWAY_TOKEN }}
 
       - name: 🚀 Deploy to Railway
-        run: railway up
+        run: pnpm dlx @railway/cli up
+
