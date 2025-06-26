@@ -84,16 +84,17 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: ✅ Run tests with pytest
+      - name: ✅ Run tests with pytest and generate HTML report
         run: |
-          pytest --disable-warnings
+          mkdir -p reports
+          pytest --disable-warnings --html=reports/report.html
 
-      - name: 📄 Upload test results (optional)
+      - name: 📄 Upload test report
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: test-results
-          path: .pytest_cache
+          name: test-report
+          path: reports
 
   docker:
     name: Docker Build and Push
