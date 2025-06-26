@@ -56,13 +56,4 @@ bash
 
 dvc remote add -d local_remote ./dvc_storage
 
-🧠 Future Work
-
-Integration of advanced models (XGBoost, LightGBM)
-
-Deployment as an API using FastAPI
-
-Real-time predictions from clinical input forms
-
-Dockerizing the entire pipeline
 
