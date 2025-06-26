@@ -101,7 +101,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 🧾 Checkout Code
+      - name: ⬇️ Checkout Code
         uses: actions/checkout@v4
 
       - name: 🔐 Docker Login
@@ -111,7 +111,9 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: 🐳 Build Docker Image
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/liver-cirrhosis-app:latest .
+        run: |
+          docker build -t docker.io/${{ secrets.DOCKER_USERNAME }}/liver-cirrhosis-app:latest .
 
       - name: 📤 Push Docker Image
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/liver-cirrhosis-app:latest
+        run: |
+          docker push docker.io/${{ secrets.DOCKER_USERNAME }}/liver-cirrhosis-app:latest
