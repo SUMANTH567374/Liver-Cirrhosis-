@@ -1,5 +1,5 @@
 features:
-  top_n: 14
+  top_n: 13
 
 split:
   test_size: 0.2
