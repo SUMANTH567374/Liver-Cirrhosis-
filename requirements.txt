@@ -94,7 +94,7 @@ pycparser==2.22
 pydantic==2.11.7
 pydantic_core==2.33.2
 pydot==4.0.1
-PyDrive2==1.21.3
+PyDrive2>=1.21.6
 pygit2==1.18.0
 Pygments==2.19.2
 pygtrie==2.5.0
