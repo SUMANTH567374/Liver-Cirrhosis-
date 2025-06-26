@@ -64,19 +64,17 @@ jobs:
     name:  Deploy to Railway
     needs: docker
     runs-on: ubuntu-latest
-
+    container:
+      image: ghcr.io/railwayapp/cli:latest
+    env:
+      RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+      # optionally: SVC_ID if deploying a specific service
     steps:
-      - name: 📥 Checkout Code
+      - name: ⬇️ Checkout code
         uses: actions/checkout@v3
 
-      - name: 🧰 Install pnpm and Railway CLI
+      - name:  Deploy via Railway CLI
         run: |
-          npm install -g pnpm
-          echo '${{ secrets.RAILWAY_TOKEN }}' > railway_token.txt
-          pnpm dlx @railway/cli login --token $(cat railway_token.txt)
-
-      - name:  Deploy to Railway
-        run: |
-          pnpm dlx @railway/cli up
-
+          railway up --yes
+          # (or use: railway up --service="${{ env.SVC_ID }}" if using multiple services)
 
