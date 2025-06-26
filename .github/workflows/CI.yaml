@@ -69,8 +69,7 @@ jobs:
       RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
 
     steps:
-      - name: 📥 Checkout Code
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: 🚀 Deploy using Railway CLI (no service ID needed)
+      - name: 🚀 Deploy to Railway
         run: railway up
