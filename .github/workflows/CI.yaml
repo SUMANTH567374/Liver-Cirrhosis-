@@ -60,16 +60,14 @@ jobs:
         run: |
           docker push docker.io/${{ secrets.DOCKER_USERNAME }}/liver-cirrhosis-app:latest
 
-  # deploy:
-  #   name: 🚀 Deploy to Railway
-  #   needs: docker
-  #   runs-on: ubuntu-latest
-  #   container: ghcr.io/railwayapp/cli:latest
-  #   env:
-  #     RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
-
-  #   steps:
-  #     - uses: actions/checkout@v3
-
-  #     - name: 🚀 Deploy to Railway
-  #       run: railway up
+  deploy:
+    name: Deploy to Railway
+    needs: docker
+    runs-on: ubuntu-latest
+    container: ghcr.io/railwayapp/cli:latest
+    env:
+      RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+      SVC_ID: ${{ secrets.RAILWAY_SERVICE }}
+    steps:
+      - uses: actions/checkout@v3
+      - run: railway up --service=${{ env.SVC_ID }}
