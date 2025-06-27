@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/LENOVO/Downloads/Liver_Cirrhosis/mlruns/0/ded4216784bc418aa9670a8efea5bb77/artifacts
+end_time: 1750992838218
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ded4216784bc418aa9670a8efea5bb77
+run_name: RandomForest
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750992796023
+status: 3
+tags: []
+user_id: LENOVO

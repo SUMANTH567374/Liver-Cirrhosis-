@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/LENOVO/Downloads/Liver_Cirrhosis/mlruns/0/models/m-b1c8427932ac40f6b895df30f1d51858/artifacts
+creation_timestamp: 1750992894113
+experiment_id: '0'
+last_updated_timestamp: 1750992941742
+model_id: m-b1c8427932ac40f6b895df30f1d51858
+model_type: null
+name: GradientBoosting_model
+source_run_id: ef3fc601a8764e6fb16ad4170ec6bf0d
+status: 2
+status_message: null

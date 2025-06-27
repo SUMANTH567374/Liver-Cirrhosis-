@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/LENOVO/Downloads/Liver_Cirrhosis/mlruns/0/3595768d06c449548197f4ec8bcc0789/artifacts
+end_time: 1750992848157
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3595768d06c449548197f4ec8bcc0789
+run_name: SVM
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750992838235
+status: 3
+tags: []
+user_id: LENOVO

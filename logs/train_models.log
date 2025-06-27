@@ -118,3 +118,19 @@
 2025-06-26 10:56:47,432 - INFO - Saved KNN model to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\models\KNN_best.pkl
 2025-06-26 10:56:47,510 - INFO - Training GradientBoosting...
 2025-06-26 10:57:22,056 - INFO - Saved GradientBoosting model to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\models\GradientBoosting_best.pkl
+2025-06-27 08:22:57,101 - INFO - Loaded data with shape (480, 14)
+2025-06-27 08:22:57,115 - INFO - Training LogisticRegression...
+2025-06-27 08:23:15,997 - INFO - Saved LogisticRegression model to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\models\LogisticRegression_best.pkl
+2025-06-27 08:23:15,997 - INFO - Logged LogisticRegression to MLflow.
+2025-06-27 08:23:16,008 - INFO - Training RandomForest...
+2025-06-27 08:23:58,203 - INFO - Saved RandomForest model to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\models\RandomForest_best.pkl
+2025-06-27 08:23:58,203 - INFO - Logged RandomForest to MLflow.
+2025-06-27 08:23:58,218 - INFO - Training SVM...
+2025-06-27 08:24:08,144 - INFO - Saved SVM model to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\models\SVM_best.pkl
+2025-06-27 08:24:08,157 - INFO - Logged SVM to MLflow.
+2025-06-27 08:24:08,160 - INFO - Training KNN...
+2025-06-27 08:24:14,787 - INFO - Saved KNN model to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\models\KNN_best.pkl
+2025-06-27 08:24:14,787 - INFO - Logged KNN to MLflow.
+2025-06-27 08:24:14,793 - INFO - Training GradientBoosting...
+2025-06-27 08:25:41,770 - INFO - Saved GradientBoosting model to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\models\GradientBoosting_best.pkl
+2025-06-27 08:25:41,773 - INFO - Logged GradientBoosting to MLflow.

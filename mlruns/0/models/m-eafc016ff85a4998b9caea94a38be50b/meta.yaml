@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/LENOVO/Downloads/Liver_Cirrhosis/mlruns/0/models/m-eafc016ff85a4998b9caea94a38be50b/artifacts
+creation_timestamp: 1750992832484
+experiment_id: '0'
+last_updated_timestamp: 1750992838171
+model_id: m-eafc016ff85a4998b9caea94a38be50b
+model_type: null
+name: RandomForest_model
+source_run_id: ded4216784bc418aa9670a8efea5bb77
+status: 2
+status_message: null

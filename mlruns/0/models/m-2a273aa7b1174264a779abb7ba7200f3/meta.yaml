@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/LENOVO/Downloads/Liver_Cirrhosis/mlruns/0/models/m-2a273aa7b1174264a779abb7ba7200f3/artifacts
+creation_timestamp: 1750992848780
+experiment_id: '0'
+last_updated_timestamp: 1750992854767
+model_id: m-2a273aa7b1174264a779abb7ba7200f3
+model_type: null
+name: KNN_model
+source_run_id: 34dcb07126404490a4ba95ffe94b5bfe
+status: 2
+status_message: null

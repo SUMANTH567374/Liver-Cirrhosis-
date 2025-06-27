@@ -1,0 +1,186 @@
+
+=================================== ERRORS ====================================
+_____________________ ERROR collecting tests/test_api.py ______________________
+tests\test_api.py:27: in <module>
+    setup_logger()
+tests\test_logger.py:13: in setup_logger
+    logging.basicConfig(
+..\..\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py:2125: in basicConfig
+    h = FileHandler(filename, mode,
+..\..\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py:1231: in __init__
+    StreamHandler.__init__(self, self._open())
+                                 ^^^^^^^^^^^^
+..\..\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py:1263: in _open
+    return open_func(self.baseFilename, self.mode,
+E   PermissionError: [Errno 13] Permission denied: 'C:\\Users\\LENOVO\\Downloads\\Liver_Cirrhosis\\test_reports\\test_log.txt'
+=========================== short test summary info ===========================
+ERROR tests/test_api.py - PermissionError: [Errno 13] Permission denied: 'C:\...
+!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!
+2 warnings, 1 error in 3.78s
+2025-06-26 11:01:28 - INFO - HTTP Request: GET http://testserver/ "HTTP/1.1 200 OK"
+2025-06-26 11:01:28 - INFO - \u2705 Health check passed.
+2025-06-26 11:01:28 - INFO - HTTP Request: POST http://testserver/predict "HTTP/1.1 500 Internal Server Error"
+2025-06-26 11:01:28 - ERROR - \u274c Prediction test failed: assert 500 == 200
+ +  where 500 = <Response [500 Internal Server Error]>.status_code
+2025-06-26 11:01:28 - INFO - \u2705 Raw data file found.
+2025-06-26 11:01:28 - INFO - \u2705 DataFrame loaded with shape: (418, 20)
+2025-06-26 11:01:28 - INFO - \u2705 'Status' column is present.
+2025-06-26 11:01:28 - INFO - \u2705 Raw data loaded for preprocessing.
+2025-06-26 11:01:28 - INFO - Preprocessing started...
+2025-06-26 11:01:29 - INFO - Cleaned data shape: (352, 19)
+2025-06-26 11:01:29 - INFO - \u2705 Cleaned DataFrame shape: (352, 19)
+2025-06-26 11:01:29 - INFO - \u2705 No missing values and 'Status' column is present.
+2025-06-26 11:01:29 - INFO - \u2705 Cleaned data loaded for feature selection.
+2025-06-26 11:01:29 - INFO - Starting feature selection using Random Forest...
+2025-06-26 11:01:29 - INFO - Class distribution after SMOTE: {0: 240, 1: 240}
+2025-06-26 11:01:29 - INFO - Balanced data saved to: C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\final\balanced_data.csv
+2025-06-26 11:01:29 - INFO - Top 13 features:
+Bilirubin        0.200374
+Copper           0.137325
+Prothrombin      0.126610
+Age              0.120010
+SGOT             0.078992
+Albumin          0.057327
+Cholesterol      0.055090
+Platelets        0.054667
+Alk_Phos         0.053207
+Tryglicerides    0.050621
+Ascites          0.023789
+Drug             0.023640
+Stage            0.018349
+dtype: float64
+2025-06-26 11:01:30 - INFO - Feature importance plot saved to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\feature_selection\top_13_features.png
+2025-06-26 11:01:30 - INFO - \u2705 Feature selection complete: 13 features selected.
+2025-06-26 11:01:30 - INFO - \u2705 GradientBoosting accuracy: 0.8646
+2025-06-26 11:01:30 - INFO - \u2705 KNN accuracy: 0.7812
+2025-06-26 11:01:30 - INFO - \u2705 LogisticRegression accuracy: 0.8229
+2025-06-26 11:01:30 - INFO - \u2705 RandomForest accuracy: 0.8542
+2025-06-26 11:01:30 - INFO - \u2705 SVM accuracy: 0.8333
+2025-06-26 11:01:30 - INFO - \u2705 Loaded and validated model: models/RandomForest_best.pkl
+2025-06-26 11:01:30 - INFO - \u2705 Loaded and validated model: models/GradientBoosting_best.pkl
+2025-06-26 11:01:30 - INFO - \u2705 Loaded and validated model: models/LogisticRegression_best.pkl
+2025-06-26 11:01:30 - INFO - \u2705 Loaded and validated model: models/KNN_best.pkl
+2025-06-26 11:01:30 - INFO - \u2705 Loaded and validated model: models/SVM_best.pkl
+2025-06-26 11:03:21 - INFO - \u2705 Loaded model: GradientBoosting with accuracy: 0.8646
+2025-06-26 11:03:21 - INFO - HTTP Request: POST http://testserver/predict "HTTP/1.1 200 OK"
+2025-06-26 11:03:21 - INFO - \u2705 Raw data file found.
+2025-06-26 11:03:21 - INFO - \u2705 DataFrame loaded with shape: (418, 20)
+2025-06-26 11:03:21 - INFO - \u2705 'Status' column is present.
+2025-06-26 11:03:21 - INFO - \u2705 Raw data loaded for preprocessing.
+2025-06-26 11:03:21 - INFO - Preprocessing started...
+2025-06-26 11:03:21 - INFO - Cleaned data shape: (352, 19)
+2025-06-26 11:03:21 - INFO - \u2705 Cleaned DataFrame shape: (352, 19)
+2025-06-26 11:03:21 - INFO - \u2705 No missing values and 'Status' column is present.
+2025-06-26 11:03:21 - INFO - \u2705 Cleaned data loaded for feature selection.
+2025-06-26 11:03:21 - INFO - Starting feature selection using Random Forest...
+2025-06-26 11:03:21 - INFO - Class distribution after SMOTE: {0: 240, 1: 240}
+2025-06-26 11:03:21 - INFO - Balanced data saved to: C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\final\balanced_data.csv
+2025-06-26 11:03:21 - INFO - Top 13 features:
+Bilirubin        0.200374
+Copper           0.137325
+Prothrombin      0.126610
+Age              0.120010
+SGOT             0.078992
+Albumin          0.057327
+Cholesterol      0.055090
+Platelets        0.054667
+Alk_Phos         0.053207
+Tryglicerides    0.050621
+Ascites          0.023789
+Drug             0.023640
+Stage            0.018349
+dtype: float64
+2025-06-26 11:03:22 - INFO - Feature importance plot saved to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\feature_selection\top_13_features.png
+2025-06-26 11:03:22 - INFO - \u2705 Feature selection complete: 13 features selected.
+2025-06-26 11:03:22 - INFO - \u2705 GradientBoosting accuracy: 0.8646
+2025-06-26 11:03:22 - INFO - \u2705 KNN accuracy: 0.7812
+2025-06-26 11:03:22 - INFO - \u2705 LogisticRegression accuracy: 0.8229
+2025-06-26 11:03:22 - INFO - \u2705 RandomForest accuracy: 0.8542
+2025-06-26 11:03:22 - INFO - \u2705 SVM accuracy: 0.8333
+2025-06-26 11:03:22 - INFO - \u2705 Loaded and validated model: models/RandomForest_best.pkl
+2025-06-26 11:03:22 - INFO - \u2705 Loaded and validated model: models/GradientBoosting_best.pkl
+2025-06-26 11:03:22 - INFO - \u2705 Loaded and validated model: models/LogisticRegression_best.pkl
+2025-06-26 11:03:22 - INFO - \u2705 Loaded and validated model: models/KNN_best.pkl
+2025-06-26 11:03:22 - INFO - \u2705 Loaded and validated model: models/SVM_best.pkl
+2025-06-26 11:21:11 - INFO - \u2705 Loaded model: GradientBoosting with accuracy: 0.8646
+2025-06-26 11:21:11 - INFO - HTTP Request: POST http://testserver/predict "HTTP/1.1 200 OK"
+2025-06-26 11:21:11 - INFO - \u2705 Raw data file found.
+2025-06-26 11:21:11 - INFO - \u2705 DataFrame loaded with shape: (418, 20)
+2025-06-26 11:21:11 - INFO - \u2705 'Status' column is present.
+2025-06-26 11:21:11 - INFO - \u2705 Raw data loaded for preprocessing.
+2025-06-26 11:21:11 - INFO - Preprocessing started...
+2025-06-26 11:21:11 - INFO - Cleaned data shape: (352, 19)
+2025-06-26 11:21:11 - INFO - \u2705 Cleaned DataFrame shape: (352, 19)
+2025-06-26 11:21:11 - INFO - \u2705 No missing values and 'Status' column is present.
+2025-06-26 11:21:11 - INFO - \u2705 Cleaned data loaded for feature selection.
+2025-06-26 11:21:11 - INFO - Starting feature selection using Random Forest...
+2025-06-26 11:21:11 - INFO - Class distribution after SMOTE: {0: 240, 1: 240}
+2025-06-26 11:21:11 - INFO - Balanced data saved to: C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\final\balanced_data.csv
+2025-06-26 11:21:11 - INFO - Top 13 features:
+Bilirubin        0.200374
+Copper           0.137325
+Prothrombin      0.126610
+Age              0.120010
+SGOT             0.078992
+Albumin          0.057327
+Cholesterol      0.055090
+Platelets        0.054667
+Alk_Phos         0.053207
+Tryglicerides    0.050621
+Ascites          0.023789
+Drug             0.023640
+Stage            0.018349
+dtype: float64
+2025-06-26 11:21:12 - INFO - Feature importance plot saved to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\feature_selection\top_13_features.png
+2025-06-26 11:21:12 - INFO - \u2705 Feature selection complete: 13 features selected.
+2025-06-26 11:21:12 - INFO - \u2705 GradientBoosting accuracy: 0.8646
+2025-06-26 11:21:12 - INFO - \u2705 KNN accuracy: 0.7812
+2025-06-26 11:21:12 - INFO - \u2705 LogisticRegression accuracy: 0.8229
+2025-06-26 11:21:12 - INFO - \u2705 RandomForest accuracy: 0.8542
+2025-06-26 11:21:12 - INFO - \u2705 SVM accuracy: 0.8333
+2025-06-26 11:21:12 - INFO - \u2705 Loaded and validated model: models/RandomForest_best.pkl
+2025-06-26 11:21:12 - INFO - \u2705 Loaded and validated model: models/GradientBoosting_best.pkl
+2025-06-26 11:21:12 - INFO - \u2705 Loaded and validated model: models/LogisticRegression_best.pkl
+2025-06-26 11:21:12 - INFO - \u2705 Loaded and validated model: models/KNN_best.pkl
+2025-06-26 11:21:12 - INFO - \u2705 Loaded and validated model: models/SVM_best.pkl
+2025-06-26 12:06:04 - INFO - \u2705 Loaded model: GradientBoosting with accuracy: 0.8646
+2025-06-26 12:06:04 - INFO - HTTP Request: POST http://testserver/predict "HTTP/1.1 200 OK"
+2025-06-26 12:06:04 - INFO - \u2705 Raw data file found.
+2025-06-26 12:06:04 - INFO - \u2705 DataFrame loaded with shape: (418, 20)
+2025-06-26 12:06:04 - INFO - \u2705 'Status' column is present.
+2025-06-26 12:06:04 - INFO - \u2705 Raw data loaded for preprocessing.
+2025-06-26 12:06:04 - INFO - Preprocessing started...
+2025-06-26 12:06:04 - INFO - Cleaned data shape: (352, 19)
+2025-06-26 12:06:04 - INFO - \u2705 Cleaned DataFrame shape: (352, 19)
+2025-06-26 12:06:04 - INFO - \u2705 No missing values and 'Status' column is present.
+2025-06-26 12:06:04 - INFO - \u2705 Cleaned data loaded for feature selection.
+2025-06-26 12:06:04 - INFO - Starting feature selection using Random Forest...
+2025-06-26 12:06:04 - INFO - Class distribution after SMOTE: {0: 240, 1: 240}
+2025-06-26 12:06:04 - INFO - Balanced data saved to: C:\Users\LENOVO\Downloads\Liver_Cirrhosis\data\final\balanced_data.csv
+2025-06-26 12:06:04 - INFO - Top 13 features:
+Bilirubin        0.200374
+Copper           0.137325
+Prothrombin      0.126610
+Age              0.120010
+SGOT             0.078992
+Albumin          0.057327
+Cholesterol      0.055090
+Platelets        0.054667
+Alk_Phos         0.053207
+Tryglicerides    0.050621
+Ascites          0.023789
+Drug             0.023640
+Stage            0.018349
+dtype: float64
+2025-06-26 12:06:05 - INFO - Feature importance plot saved to C:\Users\LENOVO\Downloads\Liver_Cirrhosis\graphs\feature_selection\top_13_features.png
+2025-06-26 12:06:05 - INFO - \u2705 Feature selection complete: 13 features selected.
+2025-06-26 12:06:05 - INFO - \u2705 GradientBoosting accuracy: 0.8646
+2025-06-26 12:06:05 - INFO - \u2705 KNN accuracy: 0.7812
+2025-06-26 12:06:05 - INFO - \u2705 LogisticRegression accuracy: 0.8229
+2025-06-26 12:06:05 - INFO - \u2705 RandomForest accuracy: 0.8542
+2025-06-26 12:06:05 - INFO - \u2705 SVM accuracy: 0.8333
+2025-06-26 12:06:05 - INFO - \u2705 Loaded and validated model: models/RandomForest_best.pkl
+2025-06-26 12:06:05 - INFO - \u2705 Loaded and validated model: models/GradientBoosting_best.pkl
+2025-06-26 12:06:05 - INFO - \u2705 Loaded and validated model: models/LogisticRegression_best.pkl
+2025-06-26 12:06:05 - INFO - \u2705 Loaded and validated model: models/KNN_best.pkl
+2025-06-26 12:06:05 - INFO - \u2705 Loaded and validated model: models/SVM_best.pkl

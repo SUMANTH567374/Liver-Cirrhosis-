@@ -1,0 +1,22 @@
+artifact_path: file:///C:/Users/LENOVO/Downloads/Liver_Cirrhosis/mlruns/0/models/m-eafc016ff85a4998b9caea94a38be50b/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.2
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.2.2
+mlflow_version: 3.1.1
+model_id: m-eafc016ff85a4998b9caea94a38be50b
+model_size_bytes: 333300
+model_uuid: m-eafc016ff85a4998b9caea94a38be50b
+prompts: null
+run_id: ded4216784bc418aa9670a8efea5bb77
+utc_time_created: '2025-06-27 02:53:52.567924'
